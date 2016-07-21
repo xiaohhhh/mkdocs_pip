@@ -7,6 +7,7 @@ html {
 
 body {
     font-size: 100%;
+    background: #FFFFFF;
 }
 
 h3, h4, h5, h6 {
@@ -14,94 +15,197 @@ h3, h4, h5, h6 {
     font-weight: 300
 }
 
-.subnavli {
+.container-fluid{
+  background-color: #f8f8f8;
+  border-bottom-width:2px;
+  border-bottom-style: solid;
+  border-bottom-color:#e5e5e5;
+  margin-bottom: 32px;
+}
+.container{
+  max-width:1200px;
 }
 
-/*
- * Sphinx doesn't have support for section dividers like we do in
- * MkDocs, this styles the section titles in the nav
- *
- * https://github.com/mkdocs/mkdocs/issues/175
- */
-.wy-menu-vertical span {
-    line-height: 18px;
-    font-size: 16px;
-    display: block;
-    position: relative;
-    font-size: 90%;
-    color: #838383;
-}
-
-
-li .toctree-l1{
-    display: none;
-}
-
-.nav{
-  list-style-type: none;
-}
-
-.subnavli{
-  background: #EEEEEE;
-  width: 200px;
-}
-
-.wy-menu-vertical ul .subnavli_single a{
-  font-size: 16px;
-  padding-left: 16px;
-}
-
-.wy-menu-vertical ul .subnavli a{
-  font-size: 16px;
-  padding-left: 16px;
-}
-  
-
-.wy-menu-vertical ul li{
-  background: #EEEEEE;
-  width: 200px;
-}
-
-.header{
-  margin: 0px;
+#doc-icon{
+  float: left;
+  margin-left: 30px;
+  margin-right: 18px;
+  padding-top: 10px;
 }
 
 #home-url{
-  padding: 10px;
+  float: left;
+  padding-top: 12px;
 }
 
 #home-url a{
-  font-size: 30px;
+  font-size: 20px;
+  color:#3a3a3a;
 }
 
 #rtd-search-form{
+  width: 160px;
+  height: 30px;
+  border: 1px;
+  border-color: #c9c9c9;
+  margin: 10px;
+}
+
+#rtd-search-form  input{
+  width: 160px;
+  height: 30px;
+}
+
+.nav-tabs li {
+  margin-right: 48px;
+}
+
+.nav-tabs li a{
+  color: #3a3a3a;
+}
+
+.header ul{
+    margin:0px;
+    padding:0px;
+}
+
+.nav-tabs{
+    border-bottom:0px;
+}
+
+.wy-menu {
+    background: #f8f8f8;
+    width: 240px;
+}
+
+.subnav{
+    min-height: 30px;
+}
+
+.subnav a{
+    list-style-type:none;
+    min-height: 30px;
+    font-size: 14px;
+    color:#666666;
+}
+
+
+.wy-menu li:first-child .subnavul{
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+
+.wy-menu  ul .subnavli_single{
+  padding-left: 10px;
+  height: 30px;
+  padding-top: 7px;
+}
+
+.subnavli_single a{
+  padding-left: 16px;
+}
+
+.wy-menu  ul .subnavli a{
+  padding-left: 16px;
+}
+
+.wy-menu ul li{
+  width: 240px;
+}
+
+.subnavul .toctree-l1{
+    display: none;
+    padding-left: 20px;
+    height: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.subnavul .toctree-l1 a{
+  margin-left: 16px;
+}
+
+li .current{
+  background: #1d75bb;
+}
+
+li .current a{
+  color: #FFFFFF;
+}
+
+
+.subnavli{
+  min-height: 30px;
+  width: 220px;
+  padding-left: 10px;
+  padding-top: 7px;
+}
+
+.nav-icon{
+  min-height: 30px;
+  width: 30px;
+  float: right;
+}
+
+.nav-icon  img{
+  max-width: 14px;
+  max-height: 14px;
+}
+
+#breadcrumbs{
+  border-style:none;
+}
+
+.rst-content {
+  margin-left: 15px;
+  margin-right: 15px;
+  word-break:break-all;
+}
+
+
+.section h1{
+  font-size: 28px;
+  color: #1d75bb;
+  font-weight: bold;
+  margin-top: 14px;
+  margin-bottom: 52px;
+}
+
+
+.section h2{
+  font-size: 24px;
+  color: #666666;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.section h3{
+  font-size: 18px;
+  color: #666666;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+#tocright{
+  width: 200px;
+  padding-left: 10px;
+  border-left-width:2px;
+  border-left-style:solid;
+  border-left-color:#1d75bb;
+}
+
+#tocright a{
+  font-size: 12px;
+  color: #666666;
+  margin: 2px;
 
 }
 
-/*
- * Long navigations run off the bottom of the screen as the nav
- * area doesn't scroll.
- *
- * https://github.com/mkdocs/mkdocs/pull/202
- */
-
-
-
-/*
- * readthedocs theme hides nav items when the window height is
- * too small to contain them.
- *
- * https://github.com/mkdocs/mkdocs/issues/#348
- */
-.wy-menu-vertical ul {
-  margin-bottom: 2em;
+#tocright a:hover{
+  color: #1d75bb;
+  font-weight: bold;
 }
 
-/*
- * Fix wrapping in the code highlighting
- *
- * https://github.com/mkdocs/mkdocs/issues/233
- */
 code {
     white-space: pre;
 }
@@ -116,12 +220,8 @@ pre code{
 pre>code{
   border-left: 0px;
 }
-/*
- * Wrap inline code samples otherwise they shoot of the side and
- * can't be read at all.
- *
- * https://github.com/mkdocs/mkdocs/issues/313
- */
+
+
 p code {
     word-wrap: break-word;
 }
@@ -174,26 +274,24 @@ code.cs, code.c {
     border-color: #D1D4D5;
 }
 
-.wy-menu-vertical li ul {
+.wy-menu li ul {
     display: inherit;
 }
 
-.wy-menu-vertical li ul.subnav ul.subnav{
-    padding-left: 1em;
-}
 
-
-/*
- * Improve inline code blocks within admonitions.
- *
- * https://github.com/mkdocs/mkdocs/issues/656
- */
  div.admonition code {
   color: #404040;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background: rgba(255, 255, 255, 0.7);
 }
 
+.subnavul li{
+  list-style-type: none;
+}
+
+.subnavul{
+  list-style-type: none;
+}
 
 .toctree-l1 {
     display: none;

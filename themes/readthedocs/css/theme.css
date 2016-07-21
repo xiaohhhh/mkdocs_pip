@@ -338,8 +338,6 @@ h2,h3 {
 }
 .fa-border {
 	padding:.2em .25em .15em;
-	border:solid 0.08em #eee;
-	border-radius:.1em
 }
 .pull-right {
 	float:right
@@ -1934,7 +1932,6 @@ button[disabled] {
 	font-size:100%;
 	padding:6px 12px 8px 12px;
 	color:#fff;
-	border:1px solid rgba(0,0,0,0.1);
 	background-color:#27AE60;
 	text-decoration:none;
 	font-weight:normal;
@@ -2090,7 +2087,6 @@ button[disabled] {
 	min-width:100%;
 	background:#fcfcfc;
 	z-index:100;
-	border:solid 1px #cfd7dd;
 	box-shadow:0 2px 2px 0 rgba(0,0,0,0.1);
 	padding:12px
 }
@@ -2703,7 +2699,6 @@ body {
 	color:#404040;
 	min-height:100%;
 	overflow-x:hidden;
-	background:#edf0f2
 }
 .wy-text-left {
 	text-align:left

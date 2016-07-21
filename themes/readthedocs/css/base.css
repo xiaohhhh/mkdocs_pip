@@ -1,7 +1,7 @@
 body {
     background: url(../img/grid.png) repeat-x;
     background-attachment: fixed;
-    background-color: #f8f8f8;
+
 }
 
 body > div.container {
@@ -30,7 +30,6 @@ div.col-md-9 img {
     padding: 4px;
     line-height: 1.428571429;
     background-color: #fff;
-    border: 1px solid #ddd;
     border-radius: 4px;
     margin: 20px auto 30px auto;
 }
@@ -67,7 +66,6 @@ hr {
 pre, .rst-content tt {
     max-width: 100%;
     background: #fff;
-    border: solid 1px #e1e4e5;
     color: #e74c3c;
     overflow-x: auto;
 }
@@ -202,7 +200,6 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
 .admonition {
     padding: 15px;
     margin-bottom: 20px;
-    border: 1px solid transparent;
     border-radius: 4px;
     text-align: left;
 }
@@ -255,10 +252,6 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
     float: right;
     width: 0;
     height: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
     margin-top: 5px;
     margin-right: -10px;
 }
