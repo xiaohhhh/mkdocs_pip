@@ -39,15 +39,15 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3  col-md-3  col-sm-3">
                     <div id="doc-icon">
                         <img src="/img/icon/doc.png">
                     </div>
                     <div id="home-url">
-                        <a href="http://192.168.4.138/">{{ site_name }}</a>
+                        <a href="http://192.168.8.152/">{{ site_name }}</a>
                     </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-md-8  col-sm-8">
                     <div class="header">
                         <ul class="nav nav-tabs">
                             <li role="presentation">
@@ -59,7 +59,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2  col-md-1 col-sm-1">
                     <div>
                         {% include "searchbox.html" %}
                     </div>
@@ -69,7 +69,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3  col-md-3 col-sm-4">
                 <ul class="wy-menu">
                     {% for nav_item in nav %}
                     <li class="subnav">
@@ -95,7 +95,7 @@
                             <li>{% endfor %}</ul>
                 </ul>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8  col-md-9  col-sm-8">
                 <section>{# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #} {# PAGE CONTENT #}
                     <div>
                         <div class="rst-content">{% include "breadcrumbs.html" %}
@@ -106,12 +106,15 @@
                 </section>
             </div>
             <div class="col-lg-1">
+            <div class="visible-lg">
                 <div id="tocright">
                 <div>
                   <p>目录</p>
                 </div>
                 {% include "tocright.html" %}
                 </div>
+            </div>
+
             </div>
         </div>
     </div>

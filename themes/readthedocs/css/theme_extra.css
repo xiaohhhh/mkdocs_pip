@@ -57,7 +57,8 @@ h3, h4, h5, h6 {
 }
 
 .nav-tabs li {
-  margin-right: 48px;
+  width: 25%;
+  text-align: center;
 }
 
 .nav-tabs li a{
@@ -142,6 +143,7 @@ li .current a{
 }
 
 .nav-icon{
+  margin-right: 20px;
   min-height: 30px;
   width: 30px;
   float: right;
@@ -187,6 +189,7 @@ li .current a{
 }
 
 #tocright{
+  margin-top: 50px;
   width: 200px;
   padding-left: 10px;
   border-left-width:2px;
