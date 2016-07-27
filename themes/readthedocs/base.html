@@ -30,12 +30,9 @@
     var mkdocs_page_input_path = "{{ current_page.input_path }}";
     var mkdocs_page_url = "{{ current_page.abs_url }}";
     </script>{% endif %}
-    <!-- <script src="{{ base_url }}/js/modernizr-2.8.3.min.js"></script>
-      <script type="text/javascript" src="{{ base_url }}/js/highlight.pack.js"></script>
-      -->
     <script src="{{ base_url }}/js/jpush.js"></script>{%- block extrahead %} {% endblock %}</head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-right">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -44,7 +41,7 @@
                         <img src="/img/icon/doc.png">
                     </div>
                     <div id="home-url">
-                        <a href="http://192.168.8.152/">{{ site_name }}</a>
+                        <a href="http://192.168.9.74/">{{ site_name }}</a>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-8  col-sm-8">
@@ -77,10 +74,10 @@
                         <ul class="subnavul">
                             <li class="subnavli">
                                 <span>
-                        <a href="{{ nav_item.children[0].url}}">
-                        {{ nav_item.title }} 
-
-                        </a></span>
+                                <a href="{{ nav_item.children[0].url}}">
+                                    {{ nav_item.title }} 
+                                </a>
+                                </span>
                                 <div class="nav-icon">
                                     <a href="#"><img src="/img/icon/right.png"></a>
                                 </div>
@@ -96,25 +93,23 @@
                 </ul>
             </div>
             <div class="col-lg-8  col-md-9  col-sm-8">
-                <section>{# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #} {# PAGE CONTENT #}
-                    <div>
-                        <div class="rst-content">{% include "breadcrumbs.html" %}
-                            <div role="main">
-                                <div class="section">{% block content %} {{ content }} {% endblock %}</div>
-                            </div>{%- block footer %} {% include "footer.html" %} {% endblock %}</div>
-                    </div>
+        
+                <section>
+                    <div class="rst-content">{% include "breadcrumbs.html" %}
+                        <div role="main">
+                            <div class="section">{% block content %} {{ content }} {% endblock %}</div>
+                        </div>{%- block footer %} {% include "footer.html" %} {% endblock %}</div>
                 </section>
             </div>
             <div class="col-lg-1">
-            <div class="visible-lg">
-                <div id="tocright">
-                <div>
-                  <p>目录</p>
+                <div class="visible-lg">
+                    <div id="tocright">
+                        <div>
+                            <p>目录</p>
+                        </div>
+                        {% include "tocright.html" %}
+                    </div>
                 </div>
-                {% include "tocright.html" %}
-                </div>
-            </div>
-
             </div>
         </div>
     </div>

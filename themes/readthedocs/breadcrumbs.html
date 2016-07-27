@@ -10,7 +10,11 @@
         {% endif %}
       {% endfor %}
     {% endif %}
-    {% if current_page %}<li><a href="{{ current_page.url }}">{{ current_page.title }}</a></li>{% endif %}
+    {% if current_page %}<li>
+    {{ current_page.title }}
+    <!--
+    <a href="{{ current_page.url }}">{{ current_page.title }}</a>
+    -->
+    </li>{% endif %}
   </ul>
-  <hr/>
 </div>

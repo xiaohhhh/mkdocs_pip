@@ -3121,7 +3121,8 @@ div[class^='highlight'] pre {
 }
 .wy-breadcrumbs li a {
 	display:inline-block;
-	padding:5px
+	padding:5px;
+	color: #1b75bb;
 }
 .wy-breadcrumbs li a:first-child {
 	padding-left:0
