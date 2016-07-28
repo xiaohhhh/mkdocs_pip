@@ -78,9 +78,11 @@ h3, h4, h5, h6 {
 .wy-menu {
     margin-top: 82px;
     background: #f8f8f8;
-    width: 240px;
+    width: 250px;
+    height: 90%;
     padding-bottom: 30px;
     position:fixed;
+    overflow-x:scroll;
 }
 
 .subnav{
@@ -178,8 +180,6 @@ li .current a{
   margin-right: 15px;
   word-break:break-all;
 }
-#content-top{
-}
 
 section{
   font-size: 14px;
@@ -236,10 +236,10 @@ section{
   position:fixed;
   margin-top: 82px;
   width: 200px;
+  height: 90%;
+  overflow-x:scroll;
   padding-left: 10px;
-  border-left-width:2px;
-  border-left-style:solid;
-  border-left-color:#1d75bb;
+  
 }
 
 
@@ -247,6 +247,12 @@ section{
   font-size: 12px;
   color: #666666;
   margin: 2px;
+}
+
+#navbar-right{
+  border-left-width:2px;
+  border-left-style:solid;
+  border-left-color:#1d75bb;
 }
 
 #tocright p{
