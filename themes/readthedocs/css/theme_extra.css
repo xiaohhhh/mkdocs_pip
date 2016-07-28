@@ -19,7 +19,7 @@ h3, h4, h5, h6 {
 
 .container-fluid{
   top:0;
-  height: 50px;
+  height: 60px;
   width: 100%;
   background-color: #f8f8f8;
   border-bottom-width:2px;
@@ -36,12 +36,12 @@ h3, h4, h5, h6 {
 
 #doc-icon{
   float: left;
-  margin: 2px;
+  margin: 10px;
 }
 
 #doc-icon a img{
-  height: 42px;
-  width: 131px;
+  height: 36px;
+  width: 130px;
 }
 
 #rtd-search-form{
@@ -49,7 +49,7 @@ h3, h4, h5, h6 {
   height: 30px;
   border: 1px;
   border-color: #c9c9c9;
-  margin: 10px;
+  margin: 20px;
 }
 
 #rtd-search-form  input{
@@ -67,22 +67,37 @@ h3, h4, h5, h6 {
 }
 
 .header ul{
-    margin:0px;
-    padding:0px;
+    margin:5px;
+    padding:5px;
 }
 
 .nav-tabs{
     border-bottom:0px;
 }
 
-.wy-menu {
+#navbar-left{
     margin-top: 82px;
-    background: #f8f8f8;
     width: 250px;
     height: 90%;
     padding-bottom: 30px;
     position:fixed;
-    overflow-x:scroll;
+}
+
+.wy-menu {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 90%;
+    width: 250px;
+    background: #f8f8f8;
+}
+
+.wy-menu::-webkit-scrollbar{
+    height: 4px;
+    width: 4px;
+}
+
+.wy-menu::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.26);
 }
 
 .subnav{
@@ -223,7 +238,6 @@ section{
 .section h5{
   font-size: 14px;
   color: #1b75bb;
-  font-weight: bold;
 }
 
 .section p{
@@ -237,7 +251,8 @@ section{
   margin-top: 82px;
   width: 200px;
   height: 90%;
-  overflow-x:scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
   padding-left: 10px;
   
 }
@@ -253,6 +268,15 @@ section{
   border-left-width:2px;
   border-left-style:solid;
   border-left-color:#1d75bb;
+}
+
+#tocright::-webkit-scrollbar{
+    height: 4px;
+    width: 4px;
+}
+
+#tocright::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.26);
 }
 
 #tocright p{
