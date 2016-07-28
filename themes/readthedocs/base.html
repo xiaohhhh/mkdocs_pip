@@ -29,19 +29,18 @@
     var mkdocs_page_name = "{{ page_title }}";
     var mkdocs_page_input_path = "{{ current_page.input_path }}";
     var mkdocs_page_url = "{{ current_page.abs_url }}";
-    </script>{% endif %}
-    <script src="{{ base_url }}/js/jpush.js"></script>{%- block extrahead %} {% endblock %}</head>
-
+    </script>
+    {% endif %}
+    <script src="{{ base_url }}/js/jpush.js"></script>
+    {%- block extrahead %} {% endblock %}
+</head>
 <body data-spy="scroll" data-target="#navbar-right">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3  col-md-3  col-sm-3">
                     <div id="doc-icon">
-                        <img src="/img/icon/doc.png">
-                    </div>
-                    <div id="home-url">
-                        <a href="http://192.168.9.74/">{{ site_name }}</a>
+                        <a href="http://192.168.9.74/"><img src="/img/icon/logo.png"></a>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-8  col-sm-8">
@@ -74,13 +73,13 @@
                         <ul class="subnavul">
                             <li class="subnavli">
                                 <span>
-                                <a href="{{ nav_item.children[0].url}}">
+                                <a href="#">
                                     {{ nav_item.title }} 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
                                 </a>
                                 </span>
-                                <div class="nav-icon">
-                                    <a href="#"><img src="/img/icon/right.png"></a>
-                                </div>
                             </li>
                             {% for nav_item in nav_item.children %} {% include 'toc.html' %} {% endfor %} {% else %}
                             <ul class="subnavul">
@@ -93,7 +92,7 @@
                 </ul>
             </div>
             <div class="col-lg-8  col-md-9  col-sm-8">
-        
+                <div id="content-top"></div>
                 <section>
                     <div class="rst-content">{% include "breadcrumbs.html" %}
                         <div role="main">

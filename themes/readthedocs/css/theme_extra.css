@@ -9,6 +9,7 @@ body {
     font-size: 100%;
     background: #FFFFFF;
     min-height: 100%;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Microsoft Yahei",Arial,Verdana,sans-serif;
 }
 
 h3, h4, h5, h6 {
@@ -35,19 +36,12 @@ h3, h4, h5, h6 {
 
 #doc-icon{
   float: left;
-  margin-left: 30px;
-  margin-right: 18px;
-  padding-top: 10px;
+  margin: 2px;
 }
 
-#home-url{
-  float: left;
-  padding-top: 12px;
-}
-
-#home-url a{
-  font-size: 20px;
-  color:#3a3a3a;
+#doc-icon a img{
+  height: 42px;
+  width: 131px;
 }
 
 #rtd-search-form{
@@ -65,7 +59,7 @@ h3, h4, h5, h6 {
 
 .nav-tabs li {
   width: 25%;
-  text-align: center;
+  text-align: left;
 }
 
 .nav-tabs li a{
@@ -114,15 +108,20 @@ h3, h4, h5, h6 {
 .wy-menu  ul .subnavli_single{
   padding-left: 10px;
   height: 30px;
-  padding-top: 7px;
 }
 
 .subnavli_single a{
   padding-left: 16px;
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .wy-menu  ul .subnavli a{
   padding-left: 16px;
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .wy-menu ul li{
@@ -131,14 +130,15 @@ h3, h4, h5, h6 {
 
 .subnavul .toctree-l1{
     display: none;
-    padding-left: 20px;
-    height: 30px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    height: 34px;
+    width: 100%;
 }
 
 .subnavul .toctree-l1 a{
-  margin-left: 16px;
+  margin-left: 40px;
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 li .current{
@@ -154,7 +154,6 @@ li .current a{
   min-height: 30px;
   width: 220px;
   padding-left: 10px;
-  padding-top: 7px;
 }
 
 .nav-icon{
@@ -179,8 +178,12 @@ li .current a{
   margin-right: 15px;
   word-break:break-all;
 }
+#content-top{
+}
 
 section{
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .section h1{
@@ -200,13 +203,15 @@ section{
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color:#e5e5e5;
-  margin-top: 52px;
+  padding-top: 80px;
+  margin-top: -40px;
 }
 
 .section h3{
   font-size: 18px;
   color: #1b75bb;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .section h4{
@@ -215,8 +220,15 @@ section{
   font-weight: bold;
 }
 
+.section h5{
+  font-size: 14px;
+  color: #1b75bb;
+  font-weight: bold;
+}
+
 .section p{
   line-height: 24px;
+  font-size: 14px;
   margin: 0px;
 }
 
