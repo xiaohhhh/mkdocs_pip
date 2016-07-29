@@ -60,15 +60,22 @@ h3, h4, h5, h6 {
 .nav-tabs li {
   width: 25%;
   text-align: left;
+  margin:0px;
 }
 
-.nav-tabs li a{
+.header .nav-tabs li a{
   color: #3a3a3a;
+  padding:15px;
+}
+
+.nav-tabs li a:hover{
+  background-color: #f8f8f8;
+  border-width:0px;
+  border-style:none;
 }
 
 .header ul{
-    margin:5px;
-    padding:5px;
+    padding: 0px;
 }
 
 .nav-tabs{
