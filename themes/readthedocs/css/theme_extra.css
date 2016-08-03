@@ -66,16 +66,22 @@ h3, h4, h5, h6 {
 .header .nav-tabs li a{
   color: #3a3a3a;
   padding:15px;
+  border-style: none;
+  width: auto;
+  display: inline;
 }
 
 .nav-tabs li a:hover{
   background-color: #f8f8f8;
-  border-width:0px;
-  border-style:none;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #1b75bb;
 }
 
 .header ul{
     padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 0px;
 }
 
 .nav-tabs{
