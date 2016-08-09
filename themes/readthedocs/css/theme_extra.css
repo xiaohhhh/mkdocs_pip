@@ -34,9 +34,16 @@ h3, h4, h5, h6 {
   max-width:1200px;
 }
 
+.header, .footer {
+    clear: both;
+    margin: 0 20px;
+    padding: 5px 0 0 0;
+}
+
 #doc-icon{
   float: left;
-  margin: 10px;
+
+  margin: 10px 10px 10px 10px;
 }
 
 #doc-icon a img{
@@ -64,6 +71,7 @@ h3, h4, h5, h6 {
 }
 
 .header .nav-tabs li a{
+  font-size: 1.2em;
   color: #3a3a3a;
   padding:15px;
   border-style: none;
@@ -74,7 +82,7 @@ h3, h4, h5, h6 {
 .nav-tabs li a:hover{
   background-color: #f8f8f8;
   border-bottom-style: solid;
-  border-bottom-width: 2px;
+  border-bottom-width: 4px;
   border-bottom-color: #1b75bb;
 }
 
@@ -102,6 +110,7 @@ h3, h4, h5, h6 {
     max-height: 90%;
     width: 250px;
     background: #f8f8f8;
+    padding-bottom: 30px;
 }
 
 .wy-menu::-webkit-scrollbar{

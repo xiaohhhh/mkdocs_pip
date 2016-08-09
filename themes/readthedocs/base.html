@@ -16,9 +16,8 @@
     <title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>{% endblock %} {% if favicon %}
     <link rel="shortcut icon" href="{{ favicon }}">{% else %}
     <link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">{% endif %}
-    <script src="{{ base_url }}/js/jquery-2.1.1.min.js"></script>{# CSS #}
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>{# CSS #}
     <link rel="stylesheet" href="{{ base_url }}/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="{{ base_url }}/css/highlight.css">
     <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.js"></script>
     <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
     <link href="{{ base_url }}/css/base.css" rel="stylesheet">{%- for path in extra_css %}
@@ -41,18 +40,18 @@
             <div class="row">
                 <div class="col-lg-3  col-md-3  col-sm-3">
                     <div id="doc-icon">
-                        <a href="http://192.168.10.162/"><img src="/img/icon/logo.png"></a>
+                        <a href="http://192.168.8.249/"><img src="/img/icon/logo.png"></a>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-8  col-sm-8">
                     <div class="header">
                         <ul class="nav nav-tabs">
-                            <li role="presentation">
-                                <a href="/jpush/">JPush</a></li>
-                            <li role="presentation">
-                                <a href="/jmessage/">JMessage</a></li>
-                            <li role="presentation">
-                                <a href="/jsms/">短信验证码</a></li>
+                            <li role="presentation" >
+                                <a href="/jpush/guideline/intro/" id="jpush">JPush</a></li>
+                            <li role="presentation" >
+                                <a href="/jmessage/guideline/jmessage_guide/" id="jmessage">JMessage</a></li>
+                            <li role="presentation" >
+                                <a href="/jsms/guideline/JSMS_guide/" id="jsms">短信验证码</a></li>
                         </ul>
                     </div>
                 </div>
