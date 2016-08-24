@@ -1,21 +1,21 @@
 $(document).ready(function() {
     url = window.location.href;
     if(url.indexOf("jpush")>0){
-        $("#jpush").css("border-bottom", "solid 2px #1b75bb");
+        $("#jpush").css("border-bottom", "solid 3px #1b75bb");
     }
-    console.log(url.indexOf("jpush"));
+    //console.log(url.indexOf("jpush"));
 
         url = window.location.href;
     if(url.indexOf("jmessage")>0){
-        $("#jmessage").css("border-bottom", "solid 2px #1b75bb");
+        $("#jmessage").css("border-bottom", "solid 3px #1b75bb");
     }
-    console.log(url.indexOf("jmessage"));
+    //console.log(url.indexOf("jmessage"));
 
         url = window.location.href;
     if(url.indexOf("jsms")>0){
-        $("#jsms").css("border-bottom", "solid 2px #1b75bb");
+        $("#jsms").css("border-bottom", "solid 3px #1b75bb");
     }
-    console.log(url.indexOf("jmessage"));
+    //console.log(url.indexOf("jmessage"));
 
 
     $("li .current").parent().css("display", "block");

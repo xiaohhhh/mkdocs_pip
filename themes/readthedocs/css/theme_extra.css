@@ -6,13 +6,15 @@ html {
 }
 
 body {
+    letter-spacing:0.5px;
     font-size: 100%;
     background: #FFFFFF;
     min-height: 100%;
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Microsoft Yahei",Arial,Verdana,sans-serif;
 }
 
-h3, h4, h5, h6 {
+h1,h2,h3, h4, h5, h6 {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Microsoft Yahei",Arial,Verdana,sans-serif;
     color: #2980b9;
     font-weight: 300
 }
@@ -65,7 +67,7 @@ h3, h4, h5, h6 {
 }
 
 .nav-tabs li {
-  width: 25%;
+  min-width: 25%;
   text-align: left;
   margin:0px;
 }
@@ -82,7 +84,7 @@ h3, h4, h5, h6 {
 .nav-tabs li a:hover{
   background-color: #f8f8f8;
   border-bottom-style: solid;
-  border-bottom-width: 4px;
+  border-bottom-width: 3px;
   border-bottom-color: #1b75bb;
 }
 
@@ -145,8 +147,10 @@ h3, h4, h5, h6 {
 }
 
 .wy-menu  ul .subnavli_single{
+  width:250px;
   padding-left: 10px;
-  height: 30px;
+  padding-right: 10px;
+  height: 34px;
 }
 
 .subnavli_single a{
@@ -169,7 +173,7 @@ h3, h4, h5, h6 {
 
 .subnavul .toctree-l1{
     display: none;
-    height: 34px;
+    min-height: 34px;
     width: 100%;
 }
 
@@ -189,10 +193,11 @@ li .current a{
 }
 
 
-.subnavli{
+.wy-menu .subnav .subnavul .subnavli{
   min-height: 30px;
-  width: 220px;
+  width: 250px;
   padding-left: 10px;
+  padding-right: 20px;
 }
 
 .nav-icon{
@@ -212,6 +217,14 @@ li .current a{
   border-style:none;
 }
 
+#breadcrumbs ul{
+  padding-left:0px;
+}
+
+.wy-breadcrumbs{
+    padding-left:0px;
+}
+
 .rst-content {
   margin-left: 15px;
   margin-right: 15px;
@@ -221,6 +234,24 @@ li .current a{
 section{
   font-size: 14px;
   font-weight: 300;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Microsoft Yahei",Arial,Verdana,sans-serif;
+}
+
+section p{
+  line-height: 1.8;
+  font-size:15px;
+  margin-bottom:0px;
+}
+
+.section div p{
+  line-height: 1.8;
+  font-size:13px;
+  margin-bottom:0px;
+}
+.section div ul li{
+  line-height: 1.8;
+  font-size:13px;
+  margin-bottom:0px;
 }
 
 .section h1{
@@ -249,30 +280,57 @@ section{
   color: #1b75bb;
   font-weight: bold;
   font-size: 18px;
+  padding-top: 80px;
+  margin-top: -40px;
+
 }
 
 .section h4{
-  font-size: 14px;
+  font-size: 15px;
   color: #3a3a3a;
   font-weight: bold;
+  margin-top: 26px;
 }
 
 .section h5{
-  font-size: 14px;
+  font-size: 15px;
   color: #1b75bb;
+  margin-top: 26px;
+  margin-bottom:10px;
 }
 
-.section p{
-  line-height: 24px;
-  font-size: 14px;
-  margin: 0px;
+section ul{
+  padding-left:40px;
 }
+
+section ul li{
+  display: list-item;
+  list-style-type: disc;
+  font-size: 15px;
+  font-weight: 300;
+  min-height: 26px;
+  line-height: 1.8;
+}
+
+section ul li ul{
+  padding-left:40px;
+}
+
+section ul li ul li{
+  display: list-item;
+  list-style-type: circle;
+  font-size: 15px;
+  font-weight: 300;
+  min-height: 26px;
+  line-height: 1.8;
+}
+
 
 #tocright{
   position:fixed;
   margin-top: 82px;
-  width: 200px;
-  height: 90%;
+  width: 160px;
+  height: 80%;
   overflow-x: hidden;
   overflow-y: auto;
   padding-left: 10px;
@@ -281,7 +339,7 @@ section{
 
 
 #tocright a{
-  font-size: 12px;
+  font-size: 13px;
   color: #666666;
   margin: 2px;
 }
@@ -303,6 +361,7 @@ section{
 
 #tocright p{
   padding: 5px;
+  font-size:15px;
 }
 
 .nav li a{
@@ -329,6 +388,7 @@ pre>code:before, .method-declaration code:before{
 
 pre{
   background-color: #fafafa;
+  margin-top:10px;
 }
 
 pre code{
@@ -413,3 +473,123 @@ code.cs, code.c {
 .toctree-l1 {
     display: none;
 }
+
+
+.download{
+  margin-top: 20px;
+  width: 720px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5e5e5;
+}
+
+.download ul li{
+  list-style-type: none;
+}
+
+.download ul li .hr{
+  clear:both;
+  width:680px;
+  text-align:center;
+  margin-left:20px;
+}
+
+.download ul{
+  padding-left:0px;
+}
+
+.download-left{
+  float: left;
+}
+
+.download-right{
+  width: 500px;
+  float: left;
+  clear:right;
+  margin-bottom:40px;
+}
+
+.download-left .download-image{
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 24px;
+  max-width: 103px;
+  max-height: 80px;
+}
+.download-title p{
+  font-size: 16px;
+  color: #1b75bb;
+  margin-top: 16px;
+}
+
+.download-info p{
+  font-size: 14px;
+  color: #666666;
+  margin-top: 6px;
+}
+
+
+.download-right .download-info-ul {
+  padding-top:0px;
+  padding-left: 0px;
+  color: #666666;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  width: 540px;
+  clear: both;
+}
+
+.download .download-info-ul li{
+  list-style-type: disc;
+  color: #666666;
+  font-size: 12px;
+  margin-right: 5px;
+  float: left;
+  min-width: 160px;
+}
+
+.download .download-info-ul li a{
+  color: #666666;
+
+}
+
+.download-right .download-icon{
+  width: 98px;
+  height: 30px;
+  border-style: solid;
+  border-color: #b5b5b5;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.download-right .download-icon a{
+  font-size: 14px;
+  color: #666666;
+  margin-top: 8px;
+}
+
+.developer{
+  width:100%;
+  height:67px;
+  margin:20px;
+  clear:both;
+}
+
+.developer-right{
+  width:90%;
+  float:left;
+}
+
+.download  .developer-info-ul{
+  list-style-type: disc;
+  margin-left:20px;
+}
+
+.download  .developer-info-ul li{
+  float:left;
+  list-style-type: disc;
+  min-width: 160px;
+}
+
+

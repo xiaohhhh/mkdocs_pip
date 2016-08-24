@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="{{ base_url }}/css/theme.css" type="text/css" />
     <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.js"></script>
     <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
-    <link href="{{ base_url }}/css/base.css" rel="stylesheet">{%- for path in extra_css %}
-    <link href="{{ path }}" rel="stylesheet">{%- endfor %}
+    <link href="{{ base_url }}/css/base.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ base_url }}/css/theme_extra.css" type="text/css" />{% if current_page %}
     <script>
     // Current page data
@@ -40,7 +39,7 @@
             <div class="row">
                 <div class="col-lg-3  col-md-3  col-sm-3">
                     <div id="doc-icon">
-                        <a href="http://192.168.8.249/"><img src="/img/icon/logo.png"></a>
+                        <a href="http://192.168.9.31/"><img src="/img/icon/logo.png"></a>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-8  col-sm-8">
@@ -82,11 +81,14 @@
                                 </a>
                                 </span>
                                 </li>
-                                {% for nav_item in nav_item.children %} {% include 'toc.html' %} {% endfor %} {% else %}
+                                {% for nav_item in nav_item.children %}
+                                {% include 'toc.html' %}
+                                {% endfor %}
+                                {% else %}
                                 <ul class="subnavul">
-                                    <li class="subnavli_single">
+                                    <li class="subnavli_single {% if nav_item.active%}current{%endif%}" >
                                         <span>
-                          <a href="{{ nav_item.url }}">{{ nav_item.title }}</a></span>
+                          <a href="{{ nav_item.url }}" class="{% if nav_item.active%}current{%endif%}">{{ nav_item.title }}</a></span>
                                     </li>{% endif %}
                                 </ul>
                                 <li>{% endfor %}</ul>
@@ -107,7 +109,7 @@
                     <div id="tocright">
                         <div id="navbar-right">
                             <div>
-                                <p>目录</p>
+                            <p>目录</p>
                             </div>
                             {% include "tocright.html" %}
                         </div>

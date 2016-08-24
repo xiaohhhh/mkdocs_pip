@@ -105,7 +105,6 @@ img {
 	border:0;
 	-ms-interpolation-mode:bicubic;
 	vertical-align:middle;
-	max-width:100%
 }
 svg:not(:root) {
 	overflow:hidden
@@ -2686,8 +2685,6 @@ a {
 a:hover {
 	color:#3091d1
 }
-a:visited {
-	color:#9B59B6
 }
 html {
 	height:100%;
@@ -2757,9 +2754,9 @@ h1,h2,h3,h4,h5,h6,legend {
 	font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif
 }
 p {
-	line-height:24px;
+	line-height:26px;
 	margin:0;
-	font-size:16px;
+	font-size:14px;
 	margin-bottom:24px
 }
 h1 {
@@ -2801,48 +2798,7 @@ code,.rst-content tt {
 code.code-large,.rst-content tt.code-large {
 	font-size:90%
 }
-.wy-plain-list-disc,.rst-content .section ul,.rst-content .toctree-wrapper ul,article ul {
-	list-style:disc;
-	line-height:24px;
-	margin-bottom:24px
-}
-.wy-plain-list-disc li,.rst-content .section ul li,.rst-content .toctree-wrapper ul li,article ul li {
-	list-style:disc;
-	margin-left:24px
-}
-.wy-plain-list-disc li p:last-child,.rst-content .section ul li p:last-child,.rst-content .toctree-wrapper ul li p:last-child,article ul li p:last-child {
-	margin-bottom:0
-}
-.wy-plain-list-disc li ul,.rst-content .section ul li ul,.rst-content .toctree-wrapper ul li ul,article ul li ul {
-	margin-bottom:0
-}
-.wy-plain-list-disc li li,.rst-content .section ul li li,.rst-content .toctree-wrapper ul li li,article ul li li {
-	list-style:circle
-}
-.wy-plain-list-disc li li li,.rst-content .section ul li li li,.rst-content .toctree-wrapper ul li li li,article ul li li li {
-	list-style:square
-}
-.wy-plain-list-disc li ol li,.rst-content .section ul li ol li,.rst-content .toctree-wrapper ul li ol li,article ul li ol li {
-	list-style:decimal
-}
-.wy-plain-list-decimal,.rst-content .section ol,.rst-content ol.arabic,article ol {
-	list-style:decimal;
-	line-height:24px;
-	margin-bottom:24px
-}
-.wy-plain-list-decimal li,.rst-content .section ol li,.rst-content ol.arabic li,article ol li {
-	list-style:decimal;
-	margin-left:24px
-}
-.wy-plain-list-decimal li p:last-child,.rst-content .section ol li p:last-child,.rst-content ol.arabic li p:last-child,article ol li p:last-child {
-	margin-bottom:0
-}
-.wy-plain-list-decimal li ul,.rst-content .section ol li ul,.rst-content ol.arabic li ul,article ol li ul {
-	margin-bottom:0
-}
-.wy-plain-list-decimal li ul li,.rst-content .section ol li ul li,.rst-content ol.arabic li ul li,article ol li ul li {
-	list-style:disc
-}
+
 .codeblock-example {
 	border:1px solid #e1e4e5;
 	border-bottom:none;
@@ -3638,9 +3594,7 @@ img {
 .rst-content .section ol.upperalpha,.rst-content .section ol.upperalpha li {
 	list-style:upper-alpha
 }
-.rst-content .section ol p,.rst-content .section ul p {
-	margin-bottom:12px
-}
+
 .rst-content .line-block {
 	margin-left:24px
 }

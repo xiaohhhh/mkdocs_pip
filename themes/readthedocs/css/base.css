@@ -26,13 +26,13 @@ div.source-links {
 }
 
 div.col-md-9 img {
-    max-width: 100%;
     display: inline;
     padding: 4px;
     line-height: 1.428571429;
     background-color: #fff;
     border-radius: 4px;
     margin: auto;
+    margin-bottom:30px;
 }
 
 h1, h2, h3 {
@@ -52,9 +52,6 @@ h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-hr {
-    border-top: 1px solid #aaa;
-}
 
 pre, .rst-content tt {
     max-width: 100%;
